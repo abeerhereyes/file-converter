@@ -70,7 +70,7 @@ function Converter() {
         formData.append("format", format);
 
         try {
-            const res = await axios.post('http://127.0.0.1:5000/convert', formData, {
+            const res = await axios.post('/convert', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
                 responseType: 'blob',
             });
