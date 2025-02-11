@@ -9,32 +9,61 @@
     --shadow-color: rgba(0, 0, 0, 0.5); 
 }
 
-body{
+body {
     background-color: var(--background-color) !important;
     color: var(--text-color);
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Container for the upload form */
 .upload-container {
     max-width: 600px;
     margin: 2rem auto;
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: var(--card-background);
     border-radius: 8px;
     box-shadow: 0 2px 4px var(--shadow-color);
 }
 
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .upload-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .upload-container {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+}
+
+/* Upload form */
 .upload-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
+/* Format selectors */
 .format-selectors {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
+@media (max-width: 480px) {
+    .format-selectors {
+        flex-direction: column;
+    }
+}
+
+/* Format label */
 .format-label {
     display: flex;
     flex-direction: column;
@@ -44,6 +73,7 @@ body{
     color: var(--text-color);
 }
 
+/* Format select dropdown */
 .format-select {
     padding: 0.5rem;
     border: 1px solid var(--border-color);
@@ -53,14 +83,18 @@ body{
     font-size: 1rem;
 }
 
+/* File input */
 .file-input {
     padding: 0.5rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     background-color: var(--card-background);
     color: var(--text-color);
+    width: 100%;
+    box-sizing: border-box;
 }
 
+/* Buttons */
 .btn {
     padding: 0.75rem 1.5rem;
     border: none;
@@ -68,6 +102,8 @@ body{
     cursor: pointer;
     transition: background-color 0.2s;
     font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .upload-btn {
@@ -79,14 +115,17 @@ body{
     background-color: var(--primary-hover-color);
 }
 
+/* Response message */
 .response-message {
     margin-top: 1rem;
     padding: 0.5rem;
     border-radius: 4px;
     background-color: var(--border-color);
     color: var(--text-color);
+    text-align: center;
 }
 
+/* Intro content */
 .intro-content {
     background-color: var(--card-background);
     padding: 20px;
@@ -96,20 +135,48 @@ body{
 .content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
+/* Heading */
 .h1-text {
     font-size: 2.5rem;
     color: var(--text-color);
     margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+    .h1-text {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .h1-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* Paragraph */
 .basic-p {
     font-size: 1.2rem;
     color: var(--secondary-text-color);
     line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+    .basic-p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .basic-p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Important text */
 .impo-p {
     font-weight: bold;
     color: var(--text-color);
