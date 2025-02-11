@@ -70,7 +70,7 @@ function Converter() {
         formData.append("format", format);
 
         try {
-            const res = await axios.post('/convert', formData, {
+            const res = await axios.post('https://file-converter-64qn.onrender.com', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' },
                 responseType: 'blob',
             });
