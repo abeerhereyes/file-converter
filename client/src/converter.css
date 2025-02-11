@@ -1,0 +1,116 @@
+:root {
+    --background-color: #121212; 
+    --text-color: #7b7dd6; 
+    --secondary-text-color: #b0b0b0; 
+    --border-color: #333333; 
+    --primary-color: #28a745; 
+    --primary-hover-color: #218838; 
+    --card-background: #1e1e1e; 
+    --shadow-color: rgba(0, 0, 0, 0.5); 
+}
+
+body{
+    background-color: var(--background-color) !important;
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+.upload-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.format-selectors {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.format-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 150px;
+    color: var(--text-color);
+}
+
+.format-select {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--card-background);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.file-input {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+}
+
+.upload-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.upload-btn:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.response-message {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.intro-content {
+    background-color: var(--card-background);
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.h1-text {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.basic-p {
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+}
+
+.impo-p {
+    font-weight: bold;
+    color: var(--text-color);
+}
